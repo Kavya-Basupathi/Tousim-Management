@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Management System</title>
+    <link rel="stylesheet" href="tour.css">
+</head>
+<body>
+    <div id="h1">
+        <div class="n">
+            <div class="a">
+                <a href="about us.html">ABOUT US</a>
+                <a href="destinations.html">DESTINATIONS</a>
+                <a href="BookNow.html">BOOK NOW</a>
+                <a href="terms&conditions.html">T&C</a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section id="destinations">
+            <h2 style="text-align: center;">TOURIST DESTINATIONS</h2>
+            <div id="destination-list"></div>
+        </section>
+        <div>
+            <section id="booking">
+                <h2>Book Tour</h2>
+                <form id="booking-form" onsubmit="return calculateAmount()" action="PayNow.html" method="post">
+                    <label for="destination">Destination:</label>
+                    <select id="destination" required>
+                        <option value="Select Destination" disabled selected>Select a destination</option>
+                        <option value="1">Gujarat</option>
+                        <option value="2">Uttar Pradesh</option>
+                        <option value="3">Punjab</option>
+                        <option value="4">Rajasthan</option>
+                        <option value="5">Kerala</option>
+                    </select>
+                    <label for="name" class="b">Name:</label>
+                    <input type="text" id="name" class="i" required>
+                    <label for="phone" class="b">Contact:</label>
+                    <input type="tel" id="phone" class="i" required>
+                    <label for="date" class="b">Tour Date:</label>
+                    <input type="date" id="date" class='i' required>
+                    <button type="submit" class="b">Book Now</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="tour.js"></script>
+    <script>
+        function calculateAmount() {
+            var destinationSelect = document.getElementById("destination");
+            var selectedDestination = destinationSelect.options[destinationSelect.selectedIndex].value;
+            var amount;
+
+            switch (selectedDestination) {
+                case "1": // Gujarat
+                    amount = 500; // Set the amount for Gujarat
+                    break;
+                case "2": // Uttar Pradesh
+                    amount = 600; // Set the amount for Uttar Pradesh
+                    break;
+                case "3": // Punjab
+                    amount = 700; // Set the amount for Punjab
+                    break;
+                case "4": // Rajasthan
+                    amount = 800; // Set the amount for Rajasthan
+                    break;
+                case "5": // Kerala
+                    amount = 900; // Set the amount for Kerala
+                    break;
+                default:
+                    amount = 0; // Default amount if no destination is selected
+            }
+
+            // Display the amount under the CVV input
+            var cvvLabel = document.getElementById("cvv-label");
+            cvvLabel.innerHTML = "CVV: <br> Payable Amount: $" + amount;
+
+            // Add the amount as a hidden input to the form
+            var hiddenAmountInput = document.createElement("input");
+            hiddenAmountInput.type = "hidden";
+            hiddenAmountInput.name = "amount";
+            hiddenAmountInput.value = amount;
+            document.getElementById("booking-form").appendChild(hiddenAmountInput);
+
+            // Continue with form submission
+            return true;
+        }
+    </script>
+</body>
+</html>

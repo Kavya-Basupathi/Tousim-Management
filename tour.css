@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+main {
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    max-width: 800px;
+    margin: 20px auto;
+    padding:20px;
+}
+
+section {
+    display: block;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+ select {
+    width: 800px;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(237,3,32,0.87) 20.8%, rgba(242,121,1,0.84) 74.4% );
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#destinations {
+    background-color: antiquewhite;
+    color:black;
+}
+
+.a{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 600px;
+    padding: 10px;
+}
+
+.nn{
+    margin-left: 50px;
+}
+
+.n{
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+    align-content: space-between;
+    padding: 8px;
+    font-weight: bolder;
+}
+
+.i{
+    width: 792px;
+    height: 35px;
+}
+
+.b{
+    margin-top: 20px;
+}
+
+#heading{
+    text-align: center;
+    padding:10px;
+}
+#ab{
+  font-family: "Dancing Script", cursive;
+  color:grey;
+  display:swap;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.as{
+    display: flex;
+    justify-content: space-around;
+}
+.container{
+    width: 100%;
+    padding-top:50px;
+}
+.we{
+    text-align: right;
+    margin-right: 50px;
+}
+.tb{
+    display:flex;
+    justify-content:space-around ;
+    margin-left: 50px;
+}
+.to{
+    text-align: left;
+    margin-right: 50px;
+}
+
+.ht{
+    text-align: left;
+}
+.t2{
+    text-align: left;
+    align-content: space-between;
+}
+.kk{
+    display: flex;
+    margin-right: 50px;
+    margin-left: 50px;
+   margin-top: 150px;
+   justify-content: space-between;
+}
+
+.mm{
+margin-top: 100px;
+margin-right: 50px;
+margin-left: 50px;
+justify-content: space-between;   
+}
+
+.m1{
+    text-align: right;
+    align-content: space-between;
+}
+
+.zz{
+    font-family: "Dancing Script", cursive;
+    color:grey;
+    display:swap;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.z1{
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+.z2{
+
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 50%;
+}
+
+.z3{
+
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 50%;
+}
+
+.z4{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;  
+}
+
+.zzz{
+    display: flex;
+    flex-direction: row;
+    padding-inline: 30px;
+}
+
+.yy{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px; 
+}
+
+.all1{
+    display:flex;
+    flex-direction: row;
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-around;
+}
+figcaption{
+    text-align: center;
+}
